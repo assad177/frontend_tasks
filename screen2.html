@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Card 2018 - Awards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #a5434a;
+            color: #fff;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+
+        .header-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #fff;
+            margin-bottom: 15px;
+            max-width: 700px;
+        }
+
+        /* Diagonal Corner */
+        .header-diagonal {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 60px 60px;
+            border-color: transparent transparent #fff transparent;
+        }
+
+        /* Awards Section */
+        .awards-container {
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .award-group {
+            margin-bottom: 50px;
+        }
+
+        .award-group-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .award-triangle {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 0 solid transparent;
+            border-bottom: 20px solid #a5434a;
+        }
+
+        .award-group-title h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: 1px;
+        }
+
+        /* Clubs Grid */
+        .clubs-grid {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .club-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 120px;
+        }
+
+        .club-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 12px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .club-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .club-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.4;
+            margin-bottom: 3px;
+        }
+
+        .club-description {
+            font-size: 11px;
+            color: #a5434a;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #a5434a;
+            color: #fff;
+            padding: 40px;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer h2 {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        .footer-diagonal {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 80px 80px;
+            border-color: transparent transparent #fff transparent;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .header p {
+                font-size: 12px;
+            }
+
+            .awards-container {
+                padding: 20px;
+            }
+
+            .award-group {
+                margin-bottom: 35px;
+            }
+
+            .clubs-grid {
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .club-card {
+                width: 100px;
+            }
+
+            .club-logo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .club-name {
+                font-size: 11px;
+            }
+
+            .footer {
+                padding: 30px 20px;
+            }
+
+            .footer h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="redCard/logo.png" alt="Red Card Logo">
+            </div>
+            <h1>RED CARD 2018</h1>
+            <h2>China Digital Football Awards</h2>
+            <p>The Red Card is globally recognised as the leading annual report to assesses the most influential European football clubs, leagues and players online in China. Now in its 7th year, Red Card 2018 has been enlarged to include 5 additional awards to recognise the many areas of digital performance in China, thereby taking the Red Card report to a whole new level. Due to the nature and variety of new categories, the winners will be chosen by a panel of 6 industry experts, rather than by the traditional metrics used to assess the three headline awards.</p>
+            <p>The report aims to educate teams and organisations on how to improve their China digital strategy, what today's Chinese fans want and what works online in China.</p>
+        </div>
+        <div class="header-diagonal"></div>
+    </div>
+
+    <!-- Awards Section -->
+    <div class="awards-container">
+        <!-- Group 1 -->
+        <div class="award-group">
+            <div class="award-group-title">
+                <div class="award-triangle"></div>
+                <h3>BEST CLUBS</h3>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/1.png" alt="Club 1">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/2.png" alt="Club 2">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/3.png" alt="Club 3">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/4.png" alt="Club 4">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/5.png" alt="Club 5">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="award-group">
+            <div class="award-group-title">
+                <div class="award-triangle"></div>
+                <h3>BEST CLUBS</h3>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/1.png" alt="Club 1">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/2.png" alt="Club 2">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/3.png" alt="Club 3">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/4.png" alt="Club 4">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/5.png" alt="Club 5">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="award-group">
+            <div class="award-group-title">
+                <div class="award-triangle"></div>
+                <h3>BEST CLUBS</h3>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/1.png" alt="Club 1">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/2.png" alt="Club 2">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/3.png" alt="Club 3">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/4.png" alt="Club 4">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/5.png" alt="Club 5">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 4 -->
+        <div class="award-group">
+            <div class="award-group-title">
+                <div class="award-triangle"></div>
+                <h3>BEST CLUBS</h3>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/1.png" alt="Club 1">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/2.png" alt="Club 2">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/3.png" alt="Club 3">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/4.png" alt="Club 4">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/5.png" alt="Club 5">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 5 -->
+        <div class="award-group">
+            <div class="award-group-title">
+                <div class="award-triangle"></div>
+                <h3>BEST CLUBS</h3>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/1.png" alt="Club 1">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/2.png" alt="Club 2">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/3.png" alt="Club 3">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/4.png" alt="Club 4">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+                <div class="club-card">
+                    <div class="club-logo">
+                        <img src="redCard/5.png" alt="Club 5">
+                    </div>
+                    <div class="club-name">Lorem Ipsum<br>Lorem</div>
+                    <div class="club-description">Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h2>RED CARD 2019 WINNERS AND REPORT TO BE LAUNCHED ON 24TH JANUARY 2019.</h2>
+        <div class="footer-diagonal"></div>
+    </div>
+
+</body>
+</html>
