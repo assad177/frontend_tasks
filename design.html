@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchub - Watch. Communicate. Create.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #e8e8e8;
+            padding: 60px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .logo {
+            font-size: 48px;
+            color: #e74c3c;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .tagline {
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-green {
+            background-color: #9bc23d;
+            color: white;
+        }
+
+        .btn-black {
+            background-color: #000;
+            color: white;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mockup {
+            width: 320px;
+            height: auto;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Channels Section */
+        .channels {
+            background-color: #fff;
+            padding: 80px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .phones-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .phone {
+            width: 160px;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .phone img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .section-text {
+            flex: 1;
+        }
+
+        .section-text h3 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .section-text p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Messages Section */
+        .messages {
+            background-color: #f8f8f8;
+            padding: 80px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .messages .section-text {
+            order: 2;
+        }
+
+        .messages .phones-container {
+            order: 1;
+        }
+
+        /* In Future Section */
+        .in-future {
+            background-color: #fff;
+            padding: 80px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .image-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fafafa;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        footer .buttons {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .contact {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .company {
+            font-size: 12px;
+            color: #999;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+
+        .logo-footer {
+            font-size: 40px;
+            margin: 20px 0;
+            color: #667eea;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero, .channels, .messages, .in-future {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            .messages .section-text {
+                order: 1;
+            }
+
+            .messages .phones-container {
+                order: 2;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .phones-container {
+                gap: 10px;
+            }
+
+            .phone {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="logo">catchub</h1>
+            <h2 class="tagline">WATCH. COMMUNICATE. CREATE.</h2>
+            <p class="description">Everything you need to socialise</p>
+            <div class="buttons">
+                <button class="btn btn-green">🔻 Android App Store</button>
+                <button class="btn btn-black">🍎 App Store</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c3ca3806d?w=400&h=800&fit=crop" alt="App Screenshot" class="mockup">
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section class="channels">
+        <div class="phones-container">
+            <div class="phone">
+                <img src="https://images.unsplash.com/photo-1512941691920-25bef6b106d7?w=200&h=400&fit=crop" alt="Channel 1">
+            </div>
+            <div class="phone">
+                <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=200&h=400&fit=crop" alt="Channel 2">
+            </div>
+            <div class="phone">
+                <img src="https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=200&h=400&fit=crop" alt="Channel 3">
+            </div>
+        </div>
+        <div class="section-text">
+            <h3>CHANNELS</h3>
+            <p>Enjoy the videos and music you love. Create your own business or entertainment channel.</p>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section class="messages">
+        <div class="section-text">
+            <h3>MESSAGES</h3>
+            <p>Communicate seamlessly. Create your own professional or social group chat</p>
+        </div>
+        <div class="phones-container">
+            <div class="phone">
+                <img src="https://images.unsplash.com/photo-1616987691294-4cb1ede20900?w=200&h=400&fit=crop" alt="Messages 1">
+            </div>
+            <div class="phone">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=400&fit=crop" alt="Messages 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- In Future Section -->
+    <section class="in-future">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1633356022450-e12b6c0b2a4d?w=400&h=500&fit=crop" alt="Future Features">
+        </div>
+        <div class="section-text">
+            <h3>IN FUTURE</h3>
+            <p>Communicate seamlessly. Create your own professional or social group chat</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>For download click here:</p>
+        <div class="buttons">
+            <button class="btn btn-green">🔻 Android App Store</button>
+            <button class="btn btn-black">🍎 App Store</button>
+        </div>
+        <p class="contact">Any questions? Feel free to <a href="#">CONTACT US</a></p>
+        <div class="logo-footer">🛡️</div>
+        <p class="company">PERATUDE</p>
+    </footer>
+
+</body>
+</html>
